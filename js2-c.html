@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function total(){
+            p=parseInt(document.getElementById("p").value)
+            c=parseInt(document.getElementById("c").value);
+            m=parseInt(document.getElementById("m").value);
+            total=p+c+m;
+            average= total/3;
+            document.getElementById("total").value=total;
+           document.getElementById("average").value=average;
+        }
+       
+    </script>
+</head>
+<body>
+    <H1> total and percentage</H1>
+    physics <input type="number" id="p"><br><br>
+    chemistry <input type="number" id="c"><br><br>
+    maths <input type="number" id="m"><br><br>
+    <button onclick="total()">ok</button>
+    total=<input type="text" id="total">
+    average=<input type="text" id="average">
+</body>
+</html>

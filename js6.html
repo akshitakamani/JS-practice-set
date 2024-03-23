@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-6</title>
+    <script>
+        function greater(){
+            no1 = document.getElementById("no-1").value;
+            no2 = document.getElementById("no-2").value;
+            no3 = document.getElementById("no-3").value;
+
+            if(no1>no2 && no1>no2){
+                document.getElementById("ans").value=no1;
+            }
+
+            else if(no2>no1 && no2>no3){
+                document.getElementById("ans").value=no2;
+            }
+
+            else{
+                document.getElementById("ans").value=no3;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>find greater number out of three numbers</h1>
+
+    Number 1 = <input type="text" id="no-1"><br><br>
+
+    Number 2 = <input type="text" id="no-2"><br><br>
+
+    Number 3 = <input type="text" id="no-3"><br><br>
+
+    <button onclick="greater()">ok</button><br><br>
+
+    greter no is = <input type="text" id="ans">
+    
+</body>
+</html>

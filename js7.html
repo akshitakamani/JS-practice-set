@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-7</title>
+    <script>
+
+        function evenOdd(){
+
+            no=document.getElementById("no").value;
+
+            if(no%2==0){
+                document.getElementById("evenOdd").value=  "even";
+            }
+
+            else{
+                document.getElementById("evenOdd").value=" odd";
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <h1>find even and odd number</h1>
+
+    Number = <input type="text" id="no"><br><br>
+
+    <button onclick="evenOdd()">ok</button><br><br>
+
+    number is <input type="text" id="evenOdd">
+
+   
+
+
+    
+</body>
+</html>

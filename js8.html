@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-8</title>
+    <script type="text/javascript">
+        function total(){
+            p=parseInt(document.getElementById("p").value)
+            c=parseInt(document.getElementById("c").value);
+            m=parseInt(document.getElementById("m").value);
+            total=p+c+m;
+            average= total/3;
+            // percentage= total*100/300;
+            document.getElementById("total").value=total;
+            document.getElementById("average").value=average;
+
+            if(average>85){
+                document.getElementById("grade").value="A";
+            }
+
+            else if(average>70){
+                document.getElementById("grade").value="B";
+            }
+
+            else if(average>55){
+                document.getElementById("grade").value="C";
+            }
+
+            else if(average>40){
+                document.getElementById("grade").value="D";
+            }
+
+            else{
+                document.getElementById("grade").value="FAIL";
+            }
+            
+
+            
+
+        
+        }
+       
+    </script>
+</head>
+<body>
+    <H1> total and percentage</H1>
+    physics <input type="number" id="p"><br><br>
+    chemistry <input type="number" id="c"><br><br>
+    maths <input type="number" id="m"><br><br>
+    <button onclick="total()">ok</button><br><br>
+    total=<input type="text" id="total">
+    average=<input type="text" id="average">
+    grade=<input type="text" id="grade">
+</body>
+</html>

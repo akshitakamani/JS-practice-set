@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function intrest(){
+            p=document.getElementById("p").value;
+            r=document.getElementById("r").value;
+            t=document.getElementById("t").value;
+            i= (p*r*t)/100;
+            document.write("simple intrest = "+ i) ;
+
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Simple Intrest</h1>
+    p<input type="text" id="p"><br><br>
+    r<input type="text" id="r"><br><br>
+    t<input type="text" id="t"><br><br>
+    <button onclick="intrest()">ok</button>
+</body>
+</html>

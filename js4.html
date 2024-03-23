@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+      function color(){
+        a=document.getElementById("color").value;
+        div=document.getElementById("div");
+        div.style.backgroundColor=a;
+    
+        
+      }  
+
+    </script>
+    <style>
+
+        body{
+            background-color: gray;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: bisque;
+            margin-top: 180px;
+            margin-left: 700px;
+        }
+
+        button{
+            display: flex;
+            /* height: 100vh; */
+            align-items: centre;
+            justify-content: center;
+            border-radius: 20px;
+            border: 0;
+            height: 20px;
+            width: 40px;
+            margin-top: 10px;
+            align-items: center;
+            margin-left: 730px;
+        }
+
+        input{
+            border-radius:20px ;
+            border: 0;
+            height: 30px;
+            width: 200px;
+            margin-top: 150px;
+            margin-left: 650px;
+            padding-left: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="div"> </div>
+    <br><br>
+    <input type="text" placeholder="Type Color Name" id="color">
+    <button onclick="color()">Ok</button>
+</body>
+</html>
